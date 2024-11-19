@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=library_manag
+      - POSTGRES_PASSWORD=postgres
+      
+    ports:
+      - "5432:5432"
+    restart: on-failure
